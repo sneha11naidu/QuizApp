@@ -1,0 +1,16 @@
+SELECT * FROM Module
+
+SELECT  * FROM Question WHERE moduleID = 1 LIMIT 5
+
+SELECT * FROM Answer WHERE questionID=1
+
+
+INSERT INTO useranswers ( userID, moduleID, questionID,selectedanswerID, iscorrect)
+VALUES (1,1,1,2,0)
+
+
+SELECT COUNT(*) FROM useranswers WHERE userID = 1 AND moduleID = 1 
+SELECT COUNT(*) FROM useranswers WHERE userID = 1 AND moduleID = 1 AND iscorrect=1 
+
+
+
